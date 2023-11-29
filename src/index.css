@@ -1,8 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +15,117 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header{
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.312);
+}
+
+header,
+.app-container{
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.nav-logo{
+    width: 115px;
+    margin-left: 20px;
+}
+
+.app-container{
+  width: 100%;
+  margin:  0 auto;
+  background: white;
+}
+
+.hero-container{
+  padding: 2rem;
+  max-width: 1200px;
+  margin:  0 auto;
+}
+
+.hero-img{
+  display: block;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.hero-container h1{
+  font-size: 3rem;
+  margin-block: 2rem 0.5rem;
+  font-weight: 800;
+}
+
+.hero-container p{
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.715);
+  font-size: 1rem;
+}
+
+.card{
+  margin: .5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-container{
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.card-img{
+  width: 220px;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+  color: rgba(0, 0, 0, 0.679);
+  padding-left: .2rem;
+}
+.card-info i{
+  color: #FF385C;
+  margin-right: .2rem;
+}
+
+.lighter-text{
+  color: rgba(0, 0, 0, 0.384);
+}
+
+b{
+  color: black;
+}
+
+.card-info-line{
+  margin-top: .4rem;
+}
+
+.jokeContainer{
+  padding: 1rem;
+  width: 400px;
+  position: relative;
+}
+
+.vote-cont{
+  display: inline-block;
+}
+
+.vote-margin{
+  margin-left: 1rem;
+}
+
+.punchline-text{
+  margin: .5rem 0;
+}
+
+hr{
+  margin-top: .4rem;
+}
+
+.ispan{
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
 }
