@@ -16,75 +16,9 @@ root.render(
 function App(){
   return (
     <div className='app-container'>
-    
-        <Joke
-            punchline = 'Its hard to explain puns to kleptomaniacs beaucse they always tha ehins literally.'
-            isPun = { false } 
-            upVotes = { 20 }
-            downVotes = { 5 }
-            comments = {[{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"},{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"}]}
-        />
-
-        <Joke
-            setup = 'I got my daughter a fridge for her birthday.'
-            punchline = 'Its hard to explain puns to kleptomaniacs beaucse they always tha ehins literally.'
-            isPun = { true } 
-            upVotes = { 24 }
-            downVotes = { 15 }
-            comments = {[{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"},{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"}]}
-        />
-
-        <Joke
-            setup = 'How did the hacker escape the police?'
-            punchline = 'He just ransomware!'
-            isPun = { false }
-            upVotes = { 30 }
-            downVotes = { 8 }
-            comments = {[{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"},{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"}]}
-        />
-
-        <Joke 
-            setup = 'Why dont pirates travel on mountain roads'
-            punchline = 'Scurvy.'
-            isPun = { true }
-            upVotes = { 30 }
-            downVotes = { 99 }
-            comments = {[{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"},{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"}]}
-        />
-
-        <Joke 
-            setup = 'Why do bees stay in the in the hive in the winterzs?'
-            punchline = 'Scurvy'
-            isPun = { true }
-            upVotes = { 30 }
-            downVotes = { 65 }
-            comments = {[{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"},{author: 'Borte Tate',body:"Hahaha Foni Börtü Jokes"}]}
-        />
-
-    </div>
-  );
-}
-
-function Joke(props){
- 
-  return (
-    <div className="jokeContainer">
-        {props.setup && <h3>Setup: { props.setup }</h3>}
-        <p className='punchline-text'>Puchline: { props.punchline }</p>
-        <div className='vote-cont'><i className="fa-solid fa-thumbs-up"></i> { props.upVotes }</div>
-        <div className='vote-cont vote-margin'><i class="fa-solid fa-thumbs-down"></i> { props.downVotes }</div>
-        {props.isPun && <i className="fa-regular fa-star ispan"></i>}
-        <h4>Comments</h4>
-          {
-            props.comments.map((com, index) => {
-              return (
-                <div key={index} className='commnet-continer'>
-                  <p>{ com.author }</p>
-                  <p>{ com.body }</p>
-                </div>
-              );
-            })
-          }
+        <Header />
+        <Hero />
+        <CardContainer /> 
     </div>
   );
 }
@@ -124,6 +58,3 @@ function Joke(props){
 
 
 //Main Project 
-    {/* <Header />
-        <Hero />
-        <CardContainer /> */}
