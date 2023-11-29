@@ -105,7 +105,11 @@ b{
 .jokeContainer{
   padding: 1rem;
   width: 400px;
-  position: relative;
+}
+
+.jokeContainer h3,
+.commnet-continer p:nth-child(1){
+  font-weight: 500;
 }
 
 .vote-cont{
@@ -125,7 +129,15 @@ hr{
 }
 
 .ispan{
-  position: absolute;
-  right: 10%;
-  bottom: 20%;
+  margin-left: 100px;
 }
+
+.commnet-continer{
+  margin-bottom: .8rem;
+  border-bottom: 1px solid black;
+}
+
+h4{
+  margin: .5rem 0 .2rem ;
+}
+
