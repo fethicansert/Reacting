@@ -11,32 +11,51 @@ export default function CardContainer(){
             />
 
               <Card 
-                image = "https://www.eivans.com/wp-content/uploads/2020/06/eSzcgjNA-Add-Logo-custom.jpg" 
+                image = "https://scrimba-airbnb-page.vercel.app/static/media/wedding-photography.de6d8e47cc4f6902350d.png" 
                 rating = "4.0"
                 review = '4'
                 country = "KKTC"
-                title = "Life lessonns with Katie Zaferes"
+                title = "Learn wedding photography"
                 price = "$246"
             />
 
               <Card 
-                image = "https://airbnb-experience-kappa.vercel.app/images/swimmer.png" 
+                image = "https://scrimba-airbnb-page.vercel.app/static/media/mountain-biking.4a10cddcb175d2ec7128.png" 
                 rating = "3.0"
                 review = '4'
                 country = "TC"
-                title = "Life lessonns with Katie Zaferes"
+                title = "Group Mountain Biking"
                 price = "$36"
             />
 
-              <Card 
+            <Card 
                 image = "https://airbnb-experience-kappa.vercel.app/images/swimmer.png" 
-                rating = "2.0"
+                rating = "5.0"
                 review = '4'
-                country = "UK"
+                country = "USA"
                 title = "Life lessonns with Katie Zaferes"
-                price = "$56"
+                price = "$136"
             />
 
+            <Card 
+                image = "https://scrimba-airbnb-page.vercel.app/static/media/mountain-biking.4a10cddcb175d2ec7128.png" 
+                rating = "3.0"
+                review = '4'
+                country = "TC"
+                title = "Group Mountain Biking"
+                price = "$36"
+            />
+       
+            <Card 
+                image = "https://airbnb-experience-kappa.vercel.app/images/swimmer.png" 
+                rating = "5.0"
+                review = '4'
+                country = "USA"
+                title = "Life lessonns with Katie Zaferes"
+                price = "$136"
+            />      
+
+        
         </div>
     );
 }
@@ -48,7 +67,7 @@ function Card(props){
             <img className="card-img" src={ props.image } alt="Katie Zefier Pro Athlete"></img>
             <div className="card-info">
                 <span className="card-info-line"><i className="fa-solid fa-star"></i> { props.rating } <span className="lighter-text">({props.review}) . { props.country }</span></span>
-                <span className="card-info-line">{ props.title }</span>
+                <span className="card-info-line card-info-title">{ props.title }</span>
                 <span className="card-info-line"><b>From { props.price }</b> / person</span>
             </div>
         </div>

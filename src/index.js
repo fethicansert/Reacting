@@ -5,7 +5,7 @@ import Header from './header';
 import Hero from './hero';
 import Card from './card';
 import CardContainer from './card';
-
+import log from './mylog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +22,28 @@ function App(){
     </div>
   );
 }
+
+const nums = [1, 2, 3, 4, 5];
+
+const numsSquare = nums.map(n => Math.pow(n,2));
+console.log(numsSquare);
+log('Hello');
+
+
+const names = ['alice', 'bob', 'charlie', 'danielle'];
+
+
+const uppercase = names.map( name => name.toUpperCase());
+const capitalize = names.map( name => {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+});
+
+const pokemons = ['Bulbasaur', 'Charmander', 'Squirtle'];
+const jSXPokemons = pokemons.map( poke => (<p>{ poke }</p>) );
+console.log(jSXPokemons)
+const jSpokemons = pokemons.map( poke =>  `<p>${poke}</p>`);
+console.log(jSpokemons);
+console.log(jSpokemons.join(''));
 
 
 //Notes
@@ -56,5 +78,3 @@ function App(){
 {/* <Greetings isLoggedIn={false}/> */}
 
 
-
-//Main Project 

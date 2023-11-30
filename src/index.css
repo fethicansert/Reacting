@@ -62,20 +62,23 @@ header,
   font-size: 1rem;
 }
 
-.card{
-  margin: .5rem;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
 .card-container{
   display: flex;
   width: 100%;
   overflow-x: scroll;
 }
 
+.card{
+  margin: .5rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  min-width: 200px;
+}
+
 .card-img{
-  width: 220px;
+  max-height: 255px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .card-info{
@@ -102,42 +105,7 @@ b{
   margin-top: .4rem;
 }
 
-.jokeContainer{
-  padding: 1rem;
-  width: 400px;
-}
-
-.jokeContainer h3,
-.commnet-continer p:nth-child(1){
+.card-info-title{
+  color: rgba(0, 0, 0, 0.723);
   font-weight: 500;
 }
-
-.vote-cont{
-  display: inline-block;
-}
-
-.vote-margin{
-  margin-left: 1rem;
-}
-
-.punchline-text{
-  margin: .5rem 0;
-}
-
-hr{
-  margin-top: .4rem;
-}
-
-.ispan{
-  margin-left: 100px;
-}
-
-.commnet-continer{
-  margin-bottom: .8rem;
-  border-bottom: 1px solid black;
-}
-
-h4{
-  margin: .5rem 0 .2rem ;
-}
-
