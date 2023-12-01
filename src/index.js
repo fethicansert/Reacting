@@ -3,35 +3,45 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './header';
 import Hero from './hero';
+import jokesData from './datas/jokesData';
+import Joke from './Joke';
+import cardData from './datas/cardData'
 import Card from './card';
-import CardContainer from './card';
-import log from './mylog';
-import jokesData from './jokesData';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <App />
 );
 
 
+
 function App(){
-console.log(jokesData);
+  // const jokes = jokesData.map((joke) => <Joke setup = {joke.setup} punchline = { joke.punchline }/>);
+  const cardDataz = cardData.map( (data) => {
+  
+    return <Card  
+                  key = { data.id }
+                  image= { data.image } 
+                  rating = { data.stats.rating } 
+                  review = { data.stats.review }
+                  country = { data.country }
+                  title = { data.title } 
+                  price = { data.price }
+                  openSpots = { data.openSpots }
+                  />
+  });
+  console.log(cardDataz);
 
   return (
     <div className='app-container'>
-
+      <Header />
+      <Hero />
+      <div className='card-container'>
+        { cardDataz }
+      </div>
     </div>
   );
-
 }
 
-
-
-{
-/* <Header />
-<Hero />
-<CardContainer />  */
-}
 
 //Notes
 

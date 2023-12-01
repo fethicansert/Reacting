@@ -8,7 +8,7 @@ export default [
         punchline: "he just ransimware!"
     },
     {
-        setuo: "Why don't pirates travel on mountain roads?",
+        setup: "Why don't pirates travel on mountain roads?",
         punchline: "Scurvy"
     },
     {
